@@ -1,0 +1,12 @@
+<h1>Products: Index View </h1>
+
+<% @products.each do |product| %>
+<br>
+<%= product[:name] %>
+<br>
+<%= product[:description] %>
+<br>
+<%= product[:price_in_cents] %>
+<br>
+
+<% end %>
