@@ -2,11 +2,11 @@
 
 <% @products.each do |product| %>
 <br>
-<%= product[:name] %>
+<%= product.name %>
 <br>
-<%= product[:description] %>
+<%= product.description %>
 <br>
-<%= product[:price_in_cents] %>
+<%= product.formatted_price %>
 <br>
 
 <% end %>
