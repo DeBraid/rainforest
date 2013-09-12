@@ -7,3 +7,22 @@ body {
   font-style: Helvetica serif;
   font-size: 20px;
 }
+
+a:hover {
+  color: black;
+  font-size: 2em;
+}
+
+.navlinks {
+  font-size: 1em;
+  position: relative;
+  top: 10px;
+  left: 10px;
+}
+
+.userinfo {
+  font-size: 1em;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
