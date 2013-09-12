@@ -1,10 +1,12 @@
 <h1>Products#show</h1>
 
 <%= link_to("Index Page", products_path) %>
-<%= params[:id] %>
-<br>
+
+<br/>
+<% params[:id] %>
+<br/>
 <%= @product.name %>
-<br>
+<br/>
 <%= @product.description %>
-<br>
+<br/>
 <%= @product.formatted_price %>

@@ -1,17 +1,13 @@
-
-
-
-<h1>Products#edit</h1>
-<p>Find me in app/views/products/edit.html.erb</p>
+<h1> Products: EDIT </h1>
 
 <%= render 'form' %>
-
-<%= @products.each do |product| %>
+ 
+<% for @products.each do |product| %>
 <br>
-<%= product[:name] %>
+<%= product.name %>
 <br>
-<%= product[:description] %>
+<%= product.description %>
 <br>
-<%= product[:price_in_cents]%>
-
+<%= product.price_in_cents %>
+  
 <% end %>
