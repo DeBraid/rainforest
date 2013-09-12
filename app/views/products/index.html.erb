@@ -1,16 +1,20 @@
 <h1>Products: Index View </h1>
 
+<%= link_to("Sign In", new_session_path) %><br/>
+<%= link_to("Create a Product", new_product_path) %><br/>
+<%= link_to("Sign Up as New User", new_user_path) %>
 
-<%= link_to("Create a Product", new_product_path) %>
 
-
-<% @products.each do |product| %>
-<br>
-<%= product.name %>
-<br>
-<%= product.description %>
-<br>
-<%= product.formatted_price %>
-<br>
+<h3>List of Current Products</h3>
+<ul>
+  <% @products.each do |product| %>
+  <br>
+  <h4><%= product.name %></h4>
+  <br>
+  <li><%= product.description %></li>
+  <br>
+  <li><%= product.formatted_price %></li>
+  <br>
+</ul>
 
 <% end %>
