@@ -17,7 +17,7 @@
     <%= yield %>
 
       <p class="userinfo">
-        <% if current_user %> <% debugger %>
+        <% if current_user %>
           Signed in as <%= current_user.email %>.<br/>
            <%= link_to "Log Out", session_path("current"),
               :method => :delete %>

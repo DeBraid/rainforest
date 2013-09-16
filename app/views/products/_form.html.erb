@@ -1,5 +1,3 @@
-<%= form_for(@product) do |f| %>
-  
   <% if @product.errors.any? %>
     
     <div id="error_explaination">
@@ -7,7 +5,7 @@
       
       <ul>
         <% @product.errors.full_messages.each do |msg| %>  
-        <li><% msg%></li>
+        <li><% msg %></li>
         <% end %>
       </ul>
   
@@ -15,6 +13,7 @@
   
   <% end %>
   
+ <%= form_for(@product) do |f| %> 
 
   <div class="field">
     <%= f.label :name %><br>
