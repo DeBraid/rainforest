@@ -6,6 +6,14 @@
 <%= link_to("Sign Up as New User", new_user_path) %>
 </div>
 
+<br />
+<%= form_tag("/search", method: "get") do %>
+  <%= label_tag(:q, "Search for:") %>
+  <%= text_field_tag (:q) %>
+  <%= submit_tag("Search") %>
+<% end %>
+
+
 <h3>List of Current Products</h3>
 
   <% @products.each do |product| %>
@@ -15,6 +23,7 @@
   <%= product.description %>
   <br>
   <%= product.formatted_price %>
+
   <br>
 
 
